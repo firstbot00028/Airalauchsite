@@ -1,0 +1,198 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden; /* Prevent horizontal scroll issues */
+}
+
+/* Header/Hero Section */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #1a0033, #0a001a); /* Dark gradient background */
+    overflow: hidden;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent navbar */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    z-index: 100;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.logo img {
+    height: 30px; /* Adjust logo size */
+    margin-right: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #007bff; /* Highlight color for nav links */
+}
+
+.hero-content {
+    z-index: 10;
+    color: #fff;
+    margin-top: -50px; /* Adjust content position */
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+    font-weight: 700;
+    background: linear-gradient(45deg, #4facfe, #00f2fe, #da33ff); /* Gradient for heading */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    color: #bbb;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    background: linear-gradient(45deg, #007bff, #00c6ff);
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.6);
+}
+
+/* 3D Container */
+#three-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Behind hero content */
+}
+
+/* General Section Styling */
+.section {
+    padding: 100px 50px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    background: linear-gradient(45deg, #da33ff, #ff33c3); /* Gradient for section headings */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section p {
+    font-size: 1.2rem;
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.dark-section {
+    background-color: #0d0d0d;
+}
+
+/* Feature Grid */
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.feature-item {
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: left;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-10px);
+}
+
+.feature-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #00c6ff;
+}
+
+.feature-item p {
+    font-size: 1rem;
+    color: #aaa;
+    margin-bottom: 0;
+}
+
+/* Video Container */
+.video-container {
+    background-color: #000;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 50px auto;
+    max-width: 900px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.demo-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* Footer */
+footer {
+    background-color: #0d0d0d;
+    padding: 30px;
+    text-align: center;
+    color: #777;
+    font-size: 0.9rem;
+}
